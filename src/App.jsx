@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import supabase from './supabase-client'
-
+import './App.css'
 
 // so sending the .single() in the end means something like when u sendit like u get only the one that u get but when u dont use single u get all the data items that u have added 
 
@@ -68,9 +68,7 @@ function App() {
         gap : "10px" ,
         display :'flex' ,
         flexDirection : 'col' ,
-        
-
-      }}>
+      }} >
         <input type="text" style={{
            padding: '10px',
            backgroundColor: '#333',
@@ -83,10 +81,10 @@ function App() {
            marginBottom: '10px',
            borderRadius: '8px',
         }} >Add Todo Item</button>
-        </div>
+       </div>
         <div>
 
-        <div style={{ display: "flex", gap: "40px" }}>
+  <div className='responsive-container' >
   {/* Todo Section */}
   <div>
     <h2 style={{ color: 'white' }}>Todo</h2>
